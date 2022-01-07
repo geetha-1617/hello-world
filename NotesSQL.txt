@@ -1,0 +1,30 @@
+1	select: select * from tablename
+2	select distinct: select distinct * from tablename
+3	where: select * from tablename where condition
+4	And: select * from tablename where condition1 and condition2
+5	Or: select * from tablename where condition1 or condition2
+6	Not: select * from tablename where condition1 and not condition2
+7	Order by: select * from tablename where condition1 order by columnName desc/asc
+8	Insert: insert into tablename values (number, 'text', 'date')
+9	Null: select * from tablename where columnName is null/ columnName is not null
+10	Update: update tablename set columnName= newvalue where condition
+11	Delete: deletes existing rows-- delete from tablename where condition
+12	Drop: delete table-- drop table tablename
+13	Top n/Top n percent: selects top n records-- select top n * from tablename/ top n percent * from tablename
+14	Min/max: select min/max(columnName) from tablename
+15	Count/avg/sum: select count(*/columnName) from tablename, avg/sum(columnName)
+16	Like/not like: select * from tablename where columnName like '%%'('A____')
+17	Wildcards: 1. '%'--> like 'A%'  2. '_'--> like 'A___'    3. '[]'--> like '[BH]%'    4. '-'--> range (like '[a-z]%')     5. '^'-->   not(like [^ ] AND like [^[a-z]] )  
+18	In: can give multiple values-- select * from tablename where columnName in (values)
+19	Between: select * from tablename where columnName between value1 and value2
+20	Alias: temporary name for a column-- select sum(columnName) as AliasName from tablename 
+21	Joins: 4 types of joins-- 1. inner join    2. left join  3. right join     4. full outer join 
+22	Group by: works with aggregate functions only (count (), sum(), min(), max(), avg())
+ 	** Where cannot be used with aggregate functions
+23	Case: case
+ 	      when condition1 then value1
+ 	      when condition2 then value2
+ 	      else value3
+ 	      end as NewColumnName
+24	Comments: -- or /*
+25	Alter: you can add, delete, modify columns-- alter table tablename alter column condition
